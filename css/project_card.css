@@ -11,7 +11,6 @@
 .project-card {
     background-color: #ffffff;
     border: 0.4rem solid #753716;
-    max-width: 70rem;
     width: 100%;
     padding: 2rem;
     display: flex;
@@ -26,10 +25,14 @@
     width: 100%;
     height: auto;
     margin-bottom: 2rem;
-    border-bottom: #1E1E1E 1px solid;
+    border-bottom: #753716 0.08rem solid;
 }
 
 .project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     width: 100%;
     text-align: left;
 }
@@ -57,7 +60,7 @@
     font-size: 0.9rem;
     color: #1E1E1E;
     text-decoration: none;
-    border: 1px solid #1E1E1E;
+    border: 0.08rem solid #1E1E1E;
     padding: 0.7rem 2rem;
     text-align: center;
     text-transform: uppercase;
@@ -71,6 +74,32 @@
 }
 
 .tags {
-    font-weight: 600;
-    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tags span {
+    color: #753716;
+}
+
+/* --- RESPONSIVENESS --- */
+@media (width > 50rem) {
+    .project-card {
+        flex-direction: row;
+        width: 100%;
+        padding: 2rem;
+        max-width: 80rem;
+    }
+    .project-card img {
+        width: 50%;
+        margin-bottom: 0;
+        border-bottom: none;
+        border-right: #753716 0.08rem solid;
+    }
+    .project-info {
+        width: 50%;
+        padding: 0 2rem;
+        justify-content: space-between;
+    }
 }

@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #f1f0f0;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
 }
@@ -85,6 +85,9 @@ header {
 
 /* About Text */
 .title-text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 6rem;
@@ -102,6 +105,8 @@ header {
 /* About Collage */
 .about-blurb {
     display: flex;
+    flex: 1;
+    flex-direction: column;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -130,7 +135,7 @@ header {
 
 .about-content p {
     font-family: "Manrope", sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 1.5;
     color: #1E1E1E;
     padding: 1rem;
@@ -139,7 +144,7 @@ header {
 
 .portrait-container {
     position: absolute;
-    top: 13rem;
+    top: 15rem;
     left: 13rem;
     width: 11rem;
     height: 13rem;
@@ -156,4 +161,34 @@ header {
     object-fit: cover;
     display: block;
     opacity: 0.8;
+}
+
+
+/* --- RESPONSIVENESS --- */
+@media (width > 70rem) {
+    #about {
+        flex-direction: row;
+        gap: 5rem;
+    }
+}
+
+@media (width > 50rem) {
+    header {
+        justify-content: right;
+    }
+
+    h1 {
+        font-size: 8rem;
+    }
+    .subtitle {
+        font-size: 1.7rem;
+    }
+    .about-content p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    .portrait-container {
+        top: 15rem;
+        left: 14rem;
+    }
 }
