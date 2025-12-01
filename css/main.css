@@ -41,6 +41,10 @@ header {
 }
 
 /* Navigation Bar */
+.navbar {
+    display: flex;
+    gap: 2rem;
+}
 .navbar a {
     text-decoration: none;
     color: #1E1E1E;
