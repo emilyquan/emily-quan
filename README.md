@@ -4,12 +4,12 @@ This site showcases my work in **UI/UX design**, **web development**, and **inte
 
 ---
 
-## 🚀 Live Site
+## Live Site
 **[Visit My Portfolio](https://emilyquan.github.io/emily-quan/)**  
 
 ---
 
-## 🎨 About the Website
+## About the Website
 This is a personal portfolio designed and built to highlight:
 
 - My **projects** in design, development, and creative technology  
