@@ -22,7 +22,6 @@ body {
     text-decoration: none;
     color: #1E1E1E;
 }
-
 .logo-circle {
     width: 2.5rem;
     height: 2.5rem;
@@ -38,6 +37,9 @@ header {
     padding: 20px 40px;
     background-color: #F5F3F1;
     border-bottom: #1E1E1E 1px solid;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 /* Navigation Bar */
@@ -55,20 +57,93 @@ header {
     letter-spacing: 0.02rem;
     transition: color 0.3s;
 }
-
 .navbar a:hover, .navbar a:focus {
-    color: #733012;
+    color: #753716;
     text-decoration: underline;
 }
 
 /* --- ABOUT SECTION --- */
 #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0rem;
+}
+
+/* About Text */
+.title-text {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+h1 {
+    font-family: "Imperial Script", cursive;
+    font-size: 6rem;
+    color: #24475B;
+}
+.subtitle {
     position: relative;
-    background-image: url("../img/Indieground-Free-FoldedPaper-Textures-03.jpg");
-    background-size: 100% auto;    /* full width, height scales */
-    background-position: top center;
+    text-align: right;
+    font-family: "IM FELL Great Primer", serif;
+    font-size: 1.3rem;
+    text-transform: lowercase;
+    color: #753716;
+    margin-top: -1rem;
+}
+
+/* About Collage */
+.about-blurb {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/Envelope.png");
+    background-size: contain;
     background-repeat: no-repeat;
-    min-height: 60rem;
-    max-height: 70rem;
-    margin: 3rem;
+    background-position: center;
+    padding: 2rem;
+    min-height: 35rem;
+}
+.about-content {
+    position: relative;
+    top: -5rem;
+    background-color: #f7f1ec;
+    border: 0.4rem solid #753716;
+    padding: 2rem;
+    max-width: 28rem;
+}
+.about-content h2 {
+    font-family: "Imperial Script", cursive;
+    font-size: 2.8rem;
+    color: #753716;
+    margin-bottom: 1.4rem;
+}
+
+.about-content p {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.7rem;
+    line-height: 1.5;
+    color: #1E1E1E;
+    padding-bottom: 0.8rem;
+}
+
+.portrait-container {
+    position: absolute;
+    top: 14rem;
+    left: 13rem;
+    width: 11rem;
+    height: 13rem;
+    border: 0.5rem solid white;
+    border-bottom: 2rem solid #ffffff;
+    overflow: hidden;
+    background-color: #fff;
+    rotate: 3deg;
+}
+
+.portrait-container img {
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.8;
 }
