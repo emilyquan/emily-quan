@@ -1,0 +1,58 @@
+/* Main CSS File */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F5F1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- NAVIGATION BAR --- */
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+.logo-circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #212c3c;
+    border-radius: 50%;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #F5F3F1;
+    border-bottom: #1E1E1E 1px solid;
+}
+
+/* Navigation Bar */
+.navbar a {
+    text-decoration: none;
+    color: #1E1E1E;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.02rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover, .navbar a:focus {
+    color: #733012;
+    text-decoration: underline;
+}
