@@ -2,92 +2,91 @@
 
 /* --- WORK SECTION --- */
 #work {
-    padding: 0rem 1rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    background-color: #faf8f7;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#work h2 {
+    background-color: #eceaea;
+    color: #753716;
+    padding: 1rem;
+    padding-right: 1.6rem;
+    rotate: -3deg;
+    z-index: 1;
 }
 
 .project-card {
-    background-color: #ffffff;
-    border: 0.4rem solid #753716;
-    width: 100%;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    min-height: 20rem;
-    max-width: 31rem;
+    background-color: #ffffff;
+    border: 0.4rem solid #753716;
+    width: 90%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 18rem;
     align-items: center;
+    rotate: 1deg;
 }
 
 .project-polaroid {
-    position: absolute;
-    translate: 4rem -2rem;
-    rotate: 2deg;
-
+    position: relative;
     background-color: #ffffff;
-    border: 0.5rem solid #eceaea;
-    border-bottom: 2.2rem solid #eceaea;
-
-    width: 10rem;
-    height: 12rem;
-
-    margin-bottom: 2rem;
+    border: 0.4rem solid #eceaea;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 15rem;
+    align-items: center;
+    rotate: -3deg;
 }
+
 .project-card img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    height: auto;
 }
 
 .project-info {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     height: 100%;
     width: 100%;
     text-align: left;
 }
 
 .project-info h3 {
-    position: absolute;
     font-family: "Manrope", sans-serif;
     font-weight: 800;
     letter-spacing: -0.1rem;
-    font-size: 1.5rem;
-
-    rotate: -1deg;
-    z-index: 1;
-    background-color: #753716;
-    color: white;
-    padding: 0.5rem 1.8rem;
+    font-size: 2rem;
+    color: #24475B;
     margin-bottom: 0.5rem;
 }
 
 .project-card p {
     font-family: "Manrope", sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
+    font-weight: 300;
+    line-height: 1.5;
     color: #1E1E1E;
     margin-bottom: 0.5rem;
-    padding-bottom: 1rem;
 }
 
 .project-card a {
-    display: flex;
-    position: absolute;
-    translate: 0rem 0.3rem;
+    display: inline-block;
     font-family: "Manrope", sans-serif;
-    font-size: 0.64rem;
-    font-weight: 600;
-    color: #1E1E1E;
-    background-color: #d6d6d6;
-
+    font-size: 0.7rem;
+    background-color: #eceaea;
+    color: #753716;
     text-decoration: none;
-    padding: 0.25rem 2.2rem;
-    /* border: 0.4rem solid #1E1E1E; */
+    width: 100%;
+    padding: 0.7rem 2rem;
     text-align: center;
     text-transform: uppercase;
     transition: color 0.3s, background-color 0.3s, border-color 0.3s;
@@ -95,7 +94,7 @@
 
 .project-card a:hover, .project-card a:focus {
     background-color: #753716;
-    color: #ffffff;
+    color: #eceaea;
     border-color: #753716;
 }
 
@@ -110,22 +109,33 @@
 }
 
 /* --- RESPONSIVENESS --- */
-/* @media (width > 50rem) {
+@media (width > 40rem) {
+    
+    #work {
+        padding-top: 3rem;
+    }
+    #work h2 {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+    .project-polaroid {
+        position: absolute;
+        translate: 165%;
+        max-width: 12rem;
+    }
     .project-card {
         flex-direction: row;
-        width: 100%;
-        padding: 2rem;
-        max-width: 80rem;
+        align-self: center;
+        translate: -20%;
+        max-width: 24rem;
     }
-    .project-card img {
-        width: 50%;
-        margin-bottom: 0;
-        border-bottom: none;
-        border-right: #753716 0.08rem solid;
+    .project-info p {
+        font-size: 0.8rem;
     }
-    .project-info {
-        width: 50%;
-        padding: 0 2rem;
-        justify-content: space-between;
+}
+
+@media (width > 70rem) {
+    .project-card {
+        max-width: 25rem;
     }
-} */
+}
