@@ -5,44 +5,65 @@
     padding: 0rem 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .project-card {
     background-color: #ffffff;
     border: 0.4rem solid #753716;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
     margin-bottom: 4rem;
+    min-height: 20rem;
     max-width: 31rem;
     align-items: center;
 }
 
+.project-polaroid {
+    position: absolute;
+    translate: 4rem -2rem;
+    rotate: 2deg;
+
+    background-color: #ffffff;
+    border: 0.5rem solid #eceaea;
+    border-bottom: 2.2rem solid #eceaea;
+
+    width: 10rem;
+    height: 12rem;
+
+    margin-bottom: 2rem;
+}
 .project-card img {
     width: 100%;
-    height: auto;
-    margin-bottom: 2rem;
-    border-bottom: #753716 0.08rem solid;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .project-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 100%;
     width: 100%;
     text-align: left;
 }
 
 .project-info h3 {
+    position: absolute;
     font-family: "Manrope", sans-serif;
     font-weight: 800;
-    letter-spacing: -0.2rem;
-    font-size: 2.5rem;
-    color: #24475B;
+    letter-spacing: -0.1rem;
+    font-size: 1.5rem;
+
+    rotate: -1deg;
+    z-index: 1;
+    background-color: #753716;
+    color: white;
+    padding: 0.5rem 1.8rem;
     margin-bottom: 0.5rem;
 }
 
@@ -55,13 +76,18 @@
 }
 
 .project-card a {
-    display: inline-block;
+    display: flex;
+    position: absolute;
+    translate: 0rem 0.3rem;
     font-family: "Manrope", sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.64rem;
+    font-weight: 600;
     color: #1E1E1E;
+    background-color: #d6d6d6;
+
     text-decoration: none;
-    border: 0.08rem solid #1E1E1E;
-    padding: 0.7rem 2rem;
+    padding: 0.25rem 2.2rem;
+    /* border: 0.4rem solid #1E1E1E; */
     text-align: center;
     text-transform: uppercase;
     transition: color 0.3s, background-color 0.3s, border-color 0.3s;
@@ -84,7 +110,7 @@
 }
 
 /* --- RESPONSIVENESS --- */
-@media (width > 50rem) {
+/* @media (width > 50rem) {
     .project-card {
         flex-direction: row;
         width: 100%;
@@ -102,4 +128,4 @@
         padding: 0 2rem;
         justify-content: space-between;
     }
-}
+} */

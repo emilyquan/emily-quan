@@ -15,63 +15,44 @@ body {
 /* --- HEADINGS --- */
 h1 {
     font-family: "Imperial Script", cursive;
-    font-size: 6rem;
+    font-size: 4rem;
     color: #24475B;
 }
 h2 {
     font-family: "Imperial Script", cursive;
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: 100;
     color: #753716;
-    text-align: center;
-    margin-bottom: 1rem;
+    text-align: left;
+    margin-bottom: 0;
 }
 
 /* --- NAVIGATION BAR --- */
 
-/* Logo */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-    color: #1E1E1E;
-}
-.logo-circle {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: #212c3c;
-    border-radius: 50%;
-}
-
-/* Header */
-header {
+nav {
     display: flex;
     justify-content: center;
     padding: 1.5rem 2rem;
     background-color: #F5F3F1;
-    border-bottom: #1E1E1E 1px solid;
+    border-bottom: #753716 0.2rem solid;
     position: sticky;
     top: 0;
     z-index: 100;
-}
-
-/* Navigation Bar */
-.navbar {
-    display: flex;
     gap: 2rem;
 }
-.navbar a {
+    
+nav a {
     text-decoration: none;
-    color: #1E1E1E;
+    color: #753716;
     font-family: "Manrope", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     letter-spacing: 0.02rem;
     transition: color 0.3s;
 }
-.navbar a:hover, .navbar a:focus {
-    color: #753716;
+nav a:hover, nav a:focus {
+    color: #24475B;
     text-decoration: underline;
 }
 
@@ -80,7 +61,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5rem 0rem;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
 }
 
 /* About Text */
@@ -89,107 +71,126 @@ header {
     flex: 1;
     flex-direction: column;
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
 }
 .subtitle {
     position: relative;
-    text-align: center;
-    translate: 6rem 0rem;
+    text-align: right;
     font-family: "IM FELL Great Primer", serif;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     text-transform: lowercase;
     color: #753716;
     margin-top: -1rem;
 }
 
 /* About Collage */
-.about-blurb {
+.about-envelope {
     display: flex;
-    flex: 1;
-    flex-direction: column;
-    position: relative;
     justify-content: center;
     align-items: center;
+
     background-image: url("../img/Envelope.png");
-    background-size: contain;
+    background-size: 90% auto;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 2rem;
-    min-height: 35rem;
+
+    width: 100%;
+    padding: 4rem 2rem;
+    min-height: 25rem;
+    max-width: 24rem;
 }
-.about-content {
+.about-card {
     position: relative;
-    bottom: 5rem;
+    bottom: 0rem;
     background-color: #F5F3F1;
     border: 0.4rem solid #753716;
-    padding: 1rem;
-    max-width: 28rem;
+    padding: 0.5rem;
+    max-width: 30rem;
+    rotate: -1deg;
 }
-.about-content h2 {
+.about-card h2 {
     font-family: "Imperial Script", cursive;
-    font-size: 3rem;
+    font-size: 2rem;
+    font-weight: 100;
     color: #753716;
     text-align: left;
     margin-bottom: 0;
 }
 
-.about-content p {
+.about-card p {
     font-family: "Manrope", sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    font-weight: 300;
     line-height: 1.5;
     color: #1E1E1E;
     padding: 1rem;
-    padding-bottom: 0.8rem;
 }
 
-.portrait-container {
+.portrait-polaroid {
     position: absolute;
-    top: 15rem;
-    left: 13rem;
-    width: 11rem;
-    height: 13rem;
-    border: 0.5rem solid #fdfdfd;
-    border-bottom: 2rem solid #fdfdfd;
+    translate: 3rem 10rem;
+    width: 8rem;
+    height: 10rem;
+    border: 0.5rem solid #eceaea;
+    border-bottom: 2rem solid #eceaea;
     overflow: hidden;
-    background-color: #fdfdfd;
+    background-color: #eceaea;
     rotate: 3deg;
 }
 
-.portrait-container img {
+.portrait-polaroid img {
     width: 100%;
     height: 130%;
     object-fit: cover;
     display: block;
-    opacity: 0.8;
 }
-
 
 /* --- RESPONSIVENESS --- */
-@media (width > 70rem) {
-    #about {
-        flex-direction: row;
+@media (width > 30rem) {
+    h1 {
+        font-size: 6rem;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .about-card p {
+        font-size: 0.8rem;
+    }
+    .portrait-polaroid {
+        translate: 3rem 11rem;
     }
 }
 
-@media (width > 50rem) {
-    header {
+@media (width > 40rem) {
+    nav {
         justify-content: right;
     }
+    nav a {
+        font-size: 0.8rem;
+    }
 
+    #about {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
     h1 {
         font-size: 8rem;
     }
     .subtitle {
-        font-size: 1.7rem;
-        translate: 7.5rem 0rem;
+        font-size: 1.4rem;
     }
-    .about-content p {
-        font-size: 0.85rem;
-        line-height: 1.5;
+
+    .about-envelope {
+        min-height: 44rem;
+        max-width: 42rem;
     }
-    .portrait-container {
-        top: 15rem;
-        left: 14rem;
+}
+
+@media (width > 60rem) {
+    #about {
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
     }
 }
