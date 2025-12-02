@@ -171,26 +171,53 @@ nav a:hover, nav a:focus {
     }
 
     #about {
-        padding-top: 8rem;
+        padding-top: 10rem;
         padding-bottom: 8rem;
     }
     h1 {
         font-size: 8rem;
+    }
+    .title-text {
+        margin-bottom: 5rem;
     }
     .subtitle {
         font-size: 1.4rem;
     }
 
     .about-envelope {
-        min-height: 44rem;
-        max-width: 42rem;
+        min-height: 42rem;
+        max-width: 40rem;
+    }
+    .about-card {
+        padding: 2rem;
+        height: 20rem;
+    }
+    .about-card h2 {
+        font-size: 3rem;
+    }
+    .portrait-polaroid {
+        translate: 6rem 11rem;
+        width: 12rem;
+        height: 14rem;
     }
 }
 
-@media (width > 60rem) {
+@media (width > 70rem) {
     #about {
         flex-direction: row;
         justify-content: center;
-        gap: 4rem;
+        padding-top: 5rem;
+    }
+    h1 {
+        font-size: 6.5rem;
+    }
+    .title-text {
+        align-items: center;
+    }
+    .subtitle {
+        translate: 6rem 0rem;
+    }
+    .about-envelope {
+        margin-right: 5rem;
     }
 }
