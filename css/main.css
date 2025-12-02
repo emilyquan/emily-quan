@@ -185,6 +185,10 @@ footer h2 {
     transition: color 0.3s;
 }
 
+.contact-links a:hover, .contact-links a:focus {
+    background-color: #753716;
+}
+
 /* --- RESPONSIVENESS --- */
 @media (width > 30rem) {
     h1 {

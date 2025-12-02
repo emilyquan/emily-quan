@@ -108,6 +108,14 @@
     color: #753716;
 }
 
+/* --- ROTATED CARDS --- */
+.rotated-left {
+    rotate: -1deg;
+}
+.rotated-right {
+    rotate: 2deg;
+}
+
 /* --- RESPONSIVENESS --- */
 @media (width > 40rem) {
     
