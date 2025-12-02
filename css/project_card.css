@@ -43,7 +43,7 @@
     flex-direction: column;
     max-width: 15rem;
     align-items: center;
-    rotate: -3deg;
+    rotate: -2deg;
 }
 
 .project-card img {
@@ -120,7 +120,7 @@
     }
     .project-polaroid {
         position: absolute;
-        translate: 165%;
+        translate: 150%;
         max-width: 12rem;
     }
     .project-card {
@@ -137,5 +137,8 @@
 @media (width > 70rem) {
     .project-card {
         max-width: 25rem;
+    }
+    .project-polaroid {
+        translate: 165%;
     }
 }

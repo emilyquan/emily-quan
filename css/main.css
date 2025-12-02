@@ -148,7 +148,7 @@ nav a:hover, nav a:focus {
 /* --- PROJECT GRID --- */
 .project-grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     gap: 3rem;
     padding-bottom: 4rem;
@@ -258,11 +258,12 @@ footer h2 {
         translate: 6rem 0rem;
     }
     .about-envelope {
-        margin-right: 5rem;
+        margin-right: 2rem;
     }
 
     .project-grid {
         gap: 12rem;
+        flex-direction: row;
     }
 }
 
@@ -275,7 +276,7 @@ footer h2 {
         translate: 11rem 0rem;
     }
     .about-envelope {
-        margin-right: 8rem;
+        margin-right: 5rem;
     }
 
     .project-grid {
