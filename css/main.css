@@ -145,12 +145,44 @@ nav a:hover, nav a:focus {
     display: block;
 }
 
+/* --- PROJECT GRID --- */
 .project-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
     padding-bottom: 4rem;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    border-top: #24475B 0.2rem solid;
+}
+footer h2 {
+    font-family: "Imperial Script", cursive;
+    text-align: center;
+    color: #24475B;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    gap: 1rem;
+}
+.contact-links a {
+    text-decoration: none;
+    background-color: #24475B;
+    color: #ffffff;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.02rem;
+    padding: 0.5rem;
+    transition: color 0.3s;
 }
 
 /* --- RESPONSIVENESS --- */
