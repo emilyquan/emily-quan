@@ -56,20 +56,31 @@
     color: #1E1E1E;
 }
 
+.emphasis {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #1E1E1E;
+    margin-top: 1.5rem;
+}
+
 .project-image {
     width: 100%;
     background: white;
     border: 0.4rem solid #753716;
-    padding: 3rem;
+    padding: 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 25rem;
+    background-color: #1d1f23;
+    margin-bottom: 1rem;
 }
 
 .project-image img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     display: block;
 }
 
@@ -84,7 +95,7 @@
 .content-section h3 {
     font-family: "IM FELL Great Primer", serif;
     font-size: 1.4rem;
-    color: #753716;
+    color: #24475B;
     text-align: left;
     margin-bottom: 1rem;
 }
@@ -93,9 +104,10 @@
     font-family: "Manrope", sans-serif;
     font-weight: 700;
     font-size: 0.9rem;
-    color: #24475B;
+    color: #753716;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
+    text-transform: uppercase;
 }
 
 .content-section p {
@@ -104,6 +116,35 @@
     line-height: 1.5;
     color: #1E1E1E;
     margin-bottom: 1rem;
+}
+
+/* --- PROTOTYPE LINKS --- */
+.prototype-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.prototype-button {
+    font-family: "Manrope", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #FFECD1;
+    background-color: #753716;
+    border: 0.15rem solid #753716;
+    padding: 0.9rem 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+    display: inline-block;
+    flex: 1;
+}
+
+.prototype-button:hover, .prototype-button:focus {
+    background-color: #24475B;
+    border-color: #24475B;
 }
 
 /* --- RESPONSIVENESS --- */
@@ -133,6 +174,9 @@
         font-size: 1rem;
     }
     .content-section p {
+        font-size: 0.9rem;
+    }
+    .prototype-button {
         font-size: 0.9rem;
     }
 }
