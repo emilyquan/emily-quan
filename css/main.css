@@ -89,6 +89,10 @@ nav a:hover, nav a:focus {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.full-name {
+    display: none;
+}
+
 /* --- ABOUT SECTION --- */
 
 #about {
@@ -184,6 +188,15 @@ nav a:hover, nav a:focus {
 
 
 /* --- RESPONSIVENESS --- */
+
+@media (width > 25rem) { /* 400px */
+    .initial {
+        display: none;
+    }
+    .full-name {
+        display: flex;
+    }
+}
 
 @media (width > 30rem) { /* 480px */
     h2 {
