@@ -87,7 +87,6 @@
 
 @media (width > 30rem) { /* 480px */
     #work {
-        margin-top: 2rem;
         margin-bottom: 2rem;
     }
     .card-top {
