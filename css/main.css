@@ -20,7 +20,7 @@ body {
 
 /* --- TEXT --- */
 
-h1 {
+h1, header p {
     font-size: 1rem;
     font-weight: 700;
     padding: 0.8rem 1rem;
@@ -49,7 +49,7 @@ h4 {
 p {
     font-size: 1rem;
     font-weight: 300;
-    line-height: 1rem;
+    letter-spacing: 0.01rem;
 }
 
 /* --- NAVIGATION BAR --- */
@@ -135,7 +135,8 @@ nav a:hover, nav a:focus {
     height: auto;
     object-fit: cover;
     object-position: center top; /* shift crop downward */
-    border: #D9D9D9 0.01rem solid;
+    border-left: #D9D9D9 0.01rem solid;
+    border-bottom: #D9D9D9 0.01rem solid;
 }
 .about-info {
     display: flex;
@@ -145,6 +146,7 @@ nav a:hover, nav a:focus {
 }
 .about-info p {
     margin-top: 1rem;
+    line-height: 1.2rem;
 }
 
 /* --- CONTACT FOOTER --- */
@@ -219,6 +221,7 @@ nav a:hover, nav a:focus {
     }
     .portrait-container {
         height: auto;
+        min-width: 10rem;
     }
     .portrait-container img {
         width: 100%;
@@ -319,8 +322,4 @@ nav a:hover, nav a:focus {
         margin-left: 2rem;
         margin-right: 2rem;
     }
-}
-
-@media (width > 120rem) { /* 1920px */
-   
 }

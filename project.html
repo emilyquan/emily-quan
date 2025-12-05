@@ -12,53 +12,58 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&family=Imperial+Script&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Oooh+Baby&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800" rel="stylesheet"> <!-- Manrope -->
 </head>
 
 <body>
-    <nav>
-        <a href="index.html#about">About</a>
-        <a href="index.html#work">Work</a>
-        <a href="index.html#contact">Contact</a>
-        <a href="#" target="_blank">Resume</a>
-    </nav>
+    <header>
+        <h1 class="full-name">Emily Quan</h1>
+        <p class="initial">EQ</p>
+        <nav>
+            <a href="index.html#about">About</a>
+            <a href="index.html#work">Work</a>
+            <a href="#" target="_blank">Resume</a>
+        </nav>
+    </header>
 
-    <div class="project-page">
-        <section class="project-top">
-            <h1 class="project-title">Euodia</h1>
+    <section class="project-page">
+        <div class="project-top">
+            <h2 class="project-title">Euodia</h2>
             
             <div class="project-intro">
-                <p class="project-description">During a 2-week design sprint for SparkJam by SFU Surge, my team and I created a futuristic smartwatch concept designed to help humans survive in a post-apocalyptic world. Our project placed 2nd out of 31 teams.</p>
-                
-                <div class="project-details-grid">
-                    <div class="detail-item">
-                        <h2>My Focus Areas</h2>
-                        <p>UI Design, Speculative Design, Prototyping</p>
-                    </div>
+                <div class="project-intro-inner">
+                    <p class="project-description">During a 2-week design sprint for SparkJam by SFU Surge, my team and I created a futuristic smartwatch concept designed to help humans survive in a post-apocalyptic world. Our project placed 2nd out of 31 teams.</p>
                     
-                    <div class="detail-item">
-                        <h2>Team Members</h2>
-                        <p>Bianca Dimaano, Brooke Zrymiak, Kelly Nguyen</p>
-                    </div>
-                    
-                    <div class="detail-item">
-                        <h2>Date</h2>
-                        <p>May 2025</p>
-                    </div>
-                    
-                    <div class="detail-item">
-                        <h2>Achievements</h2>
-                        <p>2nd Place Winner</p>
+                    <div class="project-details-grid">
+                        <div class="detail-item">
+                            <h3>My Focus</h3>
+                            <p>Speculative Design, UI Design, Prototyping</p>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <h3>Team</h3>
+                            <p>Bianca Dimaano, Brooke Zrymiak, Kelly Nguyen</p>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <h3>Timeline</h3>
+                            <p>May 2025</p>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <h3>Achievements</h3>
+                            <p>2nd Place Winner</p>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="project-image">
-                <img src="img/00.png" width="2936" height="1849" alt="Trade Network Prototype showing a futuristic hologram and smartwatch interface with various trading options">
+                <img src="img/euodia.png" width="2936" height="1849" alt="Trade Network Prototype showing a futuristic hologram and smartwatch interface with various trading options">
             </div>
-        </section>
+        </div>
 
-        <section class="project-content">
+        <div class="project-content">
             <section class="content-section">
                 <h3>Overview</h3>
                 <p>As part of SFU Surge's SparkJam design sprint, my team and I developed Euodia — a speculative smartwatch concept designed to help humans survive in a post-apocalyptic world.</p>
@@ -72,48 +77,51 @@
 
             <section class="content-section">
                 <h3>Design Process</h3>
+                
                 <h4>Initial Iterations</h4>
-                <p class="emphasis">Our first attempts missed the mark.</p>
                 <p>Early on, our prototypes were cluttered and lacked clear direction. We initially focused too heavily on the hologram feature, but eventually realized that the watch and hologram needed to work together as a system. The turning point came when we received feedback to imagine someone using this product during an active zombie fight. That shifted everything - we started designing for high-intensity survival situations.</p>
-                <p class="emphasis">So we completely pivoted our approach!</p>
+                
                 <p>We went back to basics with extensive sketching and deep worldbuilding. We needed to nail down our story and truly understand the world we were designing for. Our focus shifted to the smartwatch interface as the primary tool, with the hologram serving as secondary support for non-essential information.</p>
+
+                <h4>Second Iterations</h4>
                 <p>After multiple rounds of interface sketches and a clearer vision, we moved into wireframing. The team agreed to embrace a more futuristic aesthetic, drawing heavy inspiration from Cyberpunk. We dove into research on futuristic user interfaces and gathered visual references to guide our direction.</p>
-                
-                <h4>Typography</h4>
-                <p>Add typography.</p>
-                
-                <h4>Color Palette</h4>
-                <p>Add color palette.</p>
-                
-                <h4>Wireframes</h4>
-                <p>Add wireframes.</p>
+                <p>We selected typefaces that pair a futuristic, tech-inspired look with high readability—sharp, geometric forms for headings create a bold, modern feel, while supporting typefaces offer clear letterforms that remain legible at small sizes and quick glances.</p>
+                <p>The color palette centers around greens and blues, chosen for their modern yet subdued quality that won't strain the eyes or draw unwanted attention during a zombie virus outbreak. This combination ensures the interface feels forward-thinking and discreet, allowing users to access vital information without alerting nearby threats while maintaining accessibility and user experience.</p>
             </section>
 
             <section class="content-section">
-                <h3>Final Prototype</h3>
+                <h3>Final Product</h3>
                 <div class="project-image">
-                    <img src="img/bio.png" width="2936" height="1849" alt="Map and Bio Screen Prototypes showing futuristic hologras and smartwatch interfaces with a navigation map and biological stats">
+                    <img src="img/bio.png" width="2936" height="1849" alt="Map and Bio Screen Prototypes showing futuristic holograms and smartwatch interfaces with a navigation map and biological stats">
                 </div>
                 <div class="project-image">
-                    <img src="img/trade.png" width="2936" height="1849" alt="Infected Database and Trade Network Screen Prototypes showing futuristic hologras and smartwatch interfaces with an infected species database and trade network options">
+                    <img src="img/trade.png" width="2936" height="1849" alt="Infected Database and Trade Network Screen Prototypes showing futuristic holograms and smartwatch interfaces with an infected species database and trade network options">
                 </div>
                 <div class="prototype-links">
                     <a href="https://www.youtube.com/watch?app=desktop&v=Y9Xr2kVliIU" class="prototype-button" target="_blank">Watch Pitch</a>
                     <a href="https://www.figma.com/proto/bH8fTrdCLDZSqlhiiKXZwO/Figmamas?node-id=396-3460&p=f&viewport=2238%2C971%2C0.09&t=goNicyYE9XzCx5w7-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=723%3A27649&show-proto-sidebar=1" class="prototype-button" target="_blank">View Prototype</a>
                 </div>
             </section>
+
             <section class="content-section">
                 <h3>Reflection</h3>
                 <p>This project pushed me to explore speculative design in ways I hadn't before. Designing the trade network interface taught me how to craft animations and interactions that feel both futuristic and functional. The worldbuilding process also showed me how narrative context shapes every design decision. When you understand the world your product exists in, you can create something that feels real and meaningful to its users.</p>
             </section>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <footer id="contact">
-        <h2>Contact me</h2>
-        <div class="contact-links">
-            <a href="">Email</a>
-            <a href="https://www.linkedin.com/in/emilynquan/" target="_blank">LinkedIn</a>
+        <p class="signature">
+            Coded by 
+            <span>Emily Quan</span>
+        </p>
+        <div class="contact-container">
+            <h3>Contact me</h3>
+            <div class="contact-links">
+                <a href="">Email</a>
+                <a href="" target="_blank">GitHub</a>
+                <a href="" target="_blank">LinkedIn</a>
+            </div>
         </div>
     </footer>
 
