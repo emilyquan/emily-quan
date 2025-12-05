@@ -40,7 +40,7 @@
 .card-title p {
     font-size: 0.9rem;
     font-weight: 400;
-    color: #99b7ca;
+    color: #D9D9D9;
 }
 .card-image-container {
     width: 100%;
@@ -84,3 +84,56 @@
 }
 
 /* --- RESPONSIVENESS --- */
+
+@media (width > 30rem) { /* 480px */
+    #work {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .card-top {
+        flex-direction: row;
+    }
+    .card-image-container {
+        flex: 1
+    }
+    .card-title {
+        padding: 1rem;
+        flex: 1;
+    }
+    .card-description {
+        padding: 1rem;
+    }
+}
+
+@media (width > 40rem) { /* 640px */
+    .projects {
+        flex-direction: row;
+    }
+    .project-card {
+        max-width: 23rem;
+    }
+}
+
+@media (width > 50rem) { /* 800px */
+    .project-card {
+        max-width: none;
+    }
+}
+
+@media (width > 64rem) { /* 1024px */
+    h4 {
+        font-size: 2.2rem;
+
+    }
+    .card-title p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (width > 90rem) { /* 1440px */
+    
+}
+
+@media (width > 120rem) { /* 1920px */
+   
+}
