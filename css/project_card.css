@@ -1,152 +1,86 @@
-/* My Work Card */
+/* My Project Card CSS File */
 
 /* --- WORK SECTION --- */
+
 #work {
-    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #faf8f7;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
 }
 
-#work h2 {
-    background-color: #eceaea;
-    color: #753716;
-    padding: 1rem;
-    padding-right: 1.6rem;
-    rotate: -3deg;
-    z-index: 1;
+/* --- CARD LINKS --- */
+
+.projects a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
 }
 
+/* Card Styling */
 .project-card {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
-    border: 0.4rem solid #753716;
-    width: 90%;
-    padding: 2rem;
+    border: #D9D9D9 0.01rem solid;
+}
+.card-top {
     display: flex;
     flex-direction: column;
-    max-width: 18rem;
-    align-items: center;
-    rotate: 1deg;
 }
-
-.project-polaroid {
-    position: relative;
-    background-color: #ffffff;
-    border: 0.4rem solid #eceaea;
+.card-title {
+    padding: 0.5rem;
+}
+.card-title p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #99b7ca;
+}
+.card-image-container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    max-width: 15rem;
-    align-items: center;
-    rotate: -2deg;
 }
-
-.project-card img {
+.card-image-container img {
     width: 100%;
-    height: auto;
+    height: auto; /* preserves aspect ratio */
+    display: block; /* removes extra bottom whitespace */
+}
+.card-description {
+    border-top: #D9D9D9 0.01rem solid;
+    padding: 0.5rem;
+}
+.card-description p {
+    font-weight: 600;
 }
 
-.project-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-    text-align: left;
-}
-
-.project-info h3 {
-    font-family: "Manrope", sans-serif;
-    font-weight: 800;
-    letter-spacing: -0.1rem;
-    font-size: 2rem;
+/* Hover/focus – apply to the card inside the link */
+.projects a:hover .project-card,
+.projects a:focus .project-card {
+    background-color: #D9D9D9;
     color: #24475B;
-    margin-bottom: 0.5rem;
+    transition: background-color 0.2s, color 0.2s;
+    border-color: #24475B;
 }
-
-.project-card p {
-    font-family: "Manrope", sans-serif;
-    font-size: 0.6rem;
-    font-weight: 300;
-    line-height: 1.5;
-    color: #1E1E1E;
-    margin-bottom: 0.5rem;
+.projects a:hover h4,
+.projects a:focus h4 {
+    color: #161616;
 }
-
-.project-card a {
-    display: inline-block;
-    font-family: "Manrope", sans-serif;
-    font-size: 0.7rem;
-    background-color: #eceaea;
-    color: #753716;
-    text-decoration: none;
-    width: 100%;
-    padding: 0.7rem 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+.projects a:hover .card-description,
+.projects a:focus .card-description {
+    border-top-color: #24475B;
 }
-
-.project-card a:hover, .project-card a:focus {
-    background-color: #753716;
-    color: #eceaea;
-    border-color: #753716;
+.projects a:hover .card-title p,
+.projects a:focus .card-title p {
+    color: #24475B;
 }
-
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.tags span {
-    color: #753716;
-}
-
-/* --- ROTATED CARDS --- */
-.rotated-left {
-    rotate: -1deg;
-}
-.rotated-right {
-    rotate: 2deg;
+.projects a:hover .card-description p,
+.projects a:focus .card-description p {
+    color: #24475B;
 }
 
 /* --- RESPONSIVENESS --- */
-@media (width > 40rem) {
-    
-    #work {
-        padding-top: 3rem;
-    }
-    #work h2 {
-        margin-bottom: 2rem;
-        font-size: 3rem;
-    }
-    .project-polaroid {
-        position: absolute;
-        translate: 150%;
-        max-width: 12rem;
-    }
-    .project-card {
-        flex-direction: row;
-        align-self: center;
-        translate: -20%;
-        max-width: 24rem;
-    }
-    .project-info p {
-        font-size: 0.8rem;
-    }
-}
-
-@media (width > 70rem) {
-    .project-card {
-        max-width: 25rem;
-    }
-    .project-polaroid {
-        translate: 165%;
-    }
-}

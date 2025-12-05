@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    color: #D9D9D9;
 }
 
 body {
@@ -16,188 +18,130 @@ body {
     background-attachment: fixed;
 }
 
-/* --- HEADINGS --- */
+/* --- TEXT --- */
+
 h1 {
-    /* font-family: "Imperial Script", cursive;
-    font-size: 4rem;
-    color: #24475B; */
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.8rem 1rem;
+    text-transform: uppercase;
 }
 h2 {
-    /* font-family: "Imperial Script", cursive;
-    font-size: 2rem;
-    font-weight: 100;
-    color: #753716;
-    text-align: left;
-    margin-bottom: 0; */
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: lowercase;
+    text-align: right;
+    letter-spacing: -0.1rem;
+}
+h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.05rem;
+}
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.05rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1rem;
 }
 
 /* --- NAVIGATION BAR --- */
 
-
-
-/* nav {
+header {
     display: flex;
-    justify-content: center;
-    padding: 1.5rem 2rem;
-    background-color: #F5F3F1;
-    border-bottom: #753716 0.2rem solid;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #D9D9D9 0.01rem solid;
     position: sticky;
     top: 0;
-    z-index: 100;
-    gap: 2rem;
+    z-index: 10;
+
+    background-color: #161616;
+    background-image: url("../img/noise.svg");
+    background-position: 0 0;
+    background-size: auto;
 }
-    
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 nav a {
+    flex-direction: row;
+    font-size: 1rem;
+    font-weight: 600;
     text-decoration: none;
-    color: #753716;
-    font-family: "Manrope", sans-serif;
-    font-weight: 500;
     text-transform: uppercase;
-    font-size: 0.7rem;
-    letter-spacing: 0.02rem;
-    transition: color 0.3s;
+    padding: 0.8rem 1rem;
+    border-left: #D9D9D9 0.01rem solid;
 }
 nav a:hover, nav a:focus {
-    color: #24475B;
-    text-decoration: underline;
-} */
+    background-color: #465D6B;
+    color: #D9D9D9;
+    transition: background-color 0.3s, color 0.3s;
+}
 
 /* --- ABOUT SECTION --- */
-/* #about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 5rem;
-    padding-bottom: 6rem;
-} */
 
-/* About Text */
-/* .title-text {
+#about {
     display: flex;
-    flex: 1;
     flex-direction: column;
-    text-align: center;
-    margin-bottom: 2rem;
 }
-.subtitle {
-    position: relative;
-    text-align: right;
-    font-family: "IM FELL Great Primer", serif;
-    font-size: 0.9rem;
-    text-transform: lowercase;
-    color: #753716;
-    margin-top: -1rem;
-} */
 
-/* About Collage */
-/* .about-envelope {
+.title-heading {
     display: flex;
+    flex-direction: column;
+    align-items: right;
     justify-content: center;
-    align-items: center;
-
-    background-image: url("../img/Envelope.png");
-    background-size: 90% auto;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    width: 100%;
-    padding: 4rem 2rem;
-    min-height: 25rem;
-    max-width: 24rem;
-}
-.about-card {
-    position: relative;
-    bottom: 0rem;
-    background-color: #F5F3F1;
-    border: 0.4rem solid #753716;
-    padding: 0.5rem;
-    max-width: 30rem;
-    rotate: -1deg;
-}
-.about-card h2 {
-    font-family: "Imperial Script", cursive;
-    font-size: 2rem;
-    font-weight: 100;
-    color: #753716;
-    text-align: left;
-    margin-bottom: 0;
-}
-
-.about-card p {
-    font-family: "Manrope", sans-serif;
-    font-size: 0.6rem;
-    font-weight: 300;
-    line-height: 1.5;
-    color: #1E1E1E;
+    height: 24rem;
     padding: 1rem;
 }
-
-.portrait-polaroid {
-    position: absolute;
-    translate: 3rem 10rem;
-    width: 8rem;
-    height: 10rem;
-    border: 0.5rem solid #eceaea;
-    border-bottom: 2rem solid #eceaea;
-    overflow: hidden;
-    background-color: #eceaea;
-    rotate: 3deg;
+.title-heading p {
+    text-align: right;
 }
 
-.portrait-polaroid img {
-    width: 100%;
-    height: 130%;
-    object-fit: cover;
-    display: block;
-} */
-
-/* --- PROJECT GRID --- */
-/* .project-grid {
+.about-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-    padding-bottom: 4rem;
-} */
-
-/* --- FOOTER --- */
-/* footer {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 2rem;
-    border-top: #24475B 0.2rem solid;
-}
-footer h2 {
-    font-family: "Imperial Script", cursive;
-    text-align: center;
-    color: #24475B;
-}
-.contact-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 0.5rem;
-    gap: 1rem;
-}
-.contact-links a {
-    text-decoration: none;
-    background-color: #24475B;
-    color: #ffffff;
-    font-family: "Manrope", sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 0.7rem;
-    letter-spacing: 0.02rem;
+    background-color: #465D6B;
     padding: 0.5rem;
-    transition: color 0.3s;
+    border: #D9D9D9 0.01rem solid;
+}
+.inner-card {
+    border: #D9D9D9 0.01rem solid;
+}
+.portrait-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-height: 10rem;
+}
+.portrait-container img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    object-position: center top; /* shift crop downward */
+    border: #D9D9D9 0.01rem solid;
+}
+.about-info {
+    padding: 1rem;
+    padding-top: 0;
+}
+.about-info p {
+    margin-top: 1rem;
 }
 
-.contact-links a:hover, .contact-links a:focus {
-    background-color: #753716;
-} */
 
 /* --- RESPONSIVENESS --- */
-/* @media (width > 30rem) {
-    h1 {
+@media (width > 30rem) { /* 480px */
+    /* h1 {
         font-size: 6rem;
     }
     .subtitle {
@@ -209,11 +153,11 @@ footer h2 {
     }
     .portrait-polaroid {
         translate: 3rem 11rem;
-    }
+    } */
 }
 
-@media (width > 40rem) {
-    nav {
+@media (width > 40rem) { /* 640px */
+    /* nav {
         justify-content: right;
     }
     nav a {
@@ -249,11 +193,11 @@ footer h2 {
         translate: 6rem 11rem;
         width: 12rem;
         height: 14rem;
-    }
+    } */
 }
 
-@media (width > 70rem) {
-    #about {
+@media (width > 64rem) { /* 1024px */
+    /* #about {
         flex-direction: row;
         justify-content: center;
         padding-top: 5rem;
@@ -274,11 +218,11 @@ footer h2 {
     .project-grid {
         gap: 12rem;
         flex-direction: row;
-    }
+    } */
 }
 
-@media (width > 90rem) {
-    h1 {
+@media (width > 90rem) { /* 1440px */
+    /* h1 {
         font-size: 10rem;
     }
     .subtitle {
@@ -291,5 +235,15 @@ footer h2 {
 
     .project-grid {
         gap: 18rem;
+    } */
+}
+
+@media (width > 120rem) { /* 1920px */
+    /* h1 {
+        font-size: 12rem;
     }
-} */
+    .subtitle {
+        font-size: 2rem;
+        translate: 14rem 0rem;
+    } */
+}
