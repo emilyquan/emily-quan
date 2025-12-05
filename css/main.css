@@ -7,29 +7,35 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #161616;
     display: flex;
     flex-direction: column;
+    background-image: url("../img/noise.svg");
+    background-position: 0 0;
+    background-size: auto;
+    background-attachment: fixed;
 }
 
 /* --- HEADINGS --- */
 h1 {
-    font-family: "Imperial Script", cursive;
+    /* font-family: "Imperial Script", cursive;
     font-size: 4rem;
-    color: #24475B;
+    color: #24475B; */
 }
 h2 {
-    font-family: "Imperial Script", cursive;
+    /* font-family: "Imperial Script", cursive;
     font-size: 2rem;
     font-weight: 100;
     color: #753716;
     text-align: left;
-    margin-bottom: 0;
+    margin-bottom: 0; */
 }
 
 /* --- NAVIGATION BAR --- */
 
-nav {
+
+
+/* nav {
     display: flex;
     justify-content: center;
     padding: 1.5rem 2rem;
@@ -54,19 +60,19 @@ nav a {
 nav a:hover, nav a:focus {
     color: #24475B;
     text-decoration: underline;
-}
+} */
 
 /* --- ABOUT SECTION --- */
-#about {
+/* #about {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 5rem;
     padding-bottom: 6rem;
-}
+} */
 
 /* About Text */
-.title-text {
+/* .title-text {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -81,10 +87,10 @@ nav a:hover, nav a:focus {
     text-transform: lowercase;
     color: #753716;
     margin-top: -1rem;
-}
+} */
 
 /* About Collage */
-.about-envelope {
+/* .about-envelope {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,19 +149,19 @@ nav a:hover, nav a:focus {
     height: 130%;
     object-fit: cover;
     display: block;
-}
+} */
 
 /* --- PROJECT GRID --- */
-.project-grid {
+/* .project-grid {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
     padding-bottom: 4rem;
-}
+} */
 
 /* --- FOOTER --- */
-footer {
+/* footer {
     background-color: #ffffff;
     text-align: center;
     padding: 2rem;
@@ -187,10 +193,10 @@ footer h2 {
 
 .contact-links a:hover, .contact-links a:focus {
     background-color: #753716;
-}
+} */
 
 /* --- RESPONSIVENESS --- */
-@media (width > 30rem) {
+/* @media (width > 30rem) {
     h1 {
         font-size: 6rem;
     }
@@ -286,4 +292,4 @@ footer h2 {
     .project-grid {
         gap: 18rem;
     }
-}
+} */
